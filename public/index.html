@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Sign In</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Sign Up and Sign In</h1>
+    </header>
+
+    <main>
+        <div id="auth-info">
+            <h3>Authentication Information</h3>
+            <p>This website uses <strong>JWT (JSON Web Token)</strong> for authentication. Instead of using a database, user data is stored in a local <code>user.json</code> file on the server. The user credentials (username and password) are saved securely, and you can sign in whenever you need using the authentication token generated on login.</p>
+        </div>
+        
+        <div id="button-container">
+            <button id="signup-btn">Sign Up</button>
+            <button id="signin-btn">Sign In</button>
+        </div>
+
+        <div id="signup-form" class="hidden">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-username" placeholder="Enter username">
+            <input type="password" id="signup-password" placeholder="Enter password">
+            <button id="signup-enter">Enter</button>
+        </div>
+
+        <div id="signin-form" class="hidden">
+            <h2>Sign In</h2>
+            <input type="text" id="signin-username" placeholder="Enter username">
+            <input type="password" id="signin-password" placeholder="Enter password">
+            <button id="signin-enter">Enter</button>
+            <button type="text" id="info-btn">click for your credentials</button>   
+        
+        </div>
+
+        <div id="info">
+            
+            <div id ="user-information"></div>
+        </div>
+
+        <button id="logout-btn" class="hidden">Logout</button>
+        <div id="precaution-info">
+            <h3>Important Precautions</h3>
+            <p>As this website uses a local <code>user.json</code> file to store user data for authentication, please be aware of the following:</p>
+            <ul>
+                <li><strong>Simultaneous logins:</strong> Multiple users should not log in at the same time on different devices, as this could corrupt the <code>user.json</code> file.</li>
+                <li><strong>File integrity:</strong> The <code>user.json</code> file is critical for authentication. If it's damaged or deleted, you may lose access to your account.</li>
+                <li><strong>Data loss:</strong> Since we're not using a database, we recommend you avoid storing sensitive information, as it may not be backed up.</li>
+               
+            </ul>
+        </div>
+        
+    </main>
+
+    
+</body>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.6/axios.min.js"></script>
+<script defer src="frontend.js"></script>
+
+</html>
