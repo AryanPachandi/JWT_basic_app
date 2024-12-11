@@ -1,4 +1,4 @@
-/* General Reset */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@ body, html {
     height: 100%;
 }
 
-/* Navbar styling */
 header {
     background-color: #4CAF50;
     color: white;
@@ -23,7 +22,7 @@ header h1 {
     font-size: 24px;
 }
 
-/* Main content styling */
+
 main {
     display: flex;
     justify-content: center;
@@ -33,7 +32,7 @@ main {
     margin-top: 60px; /* Space below the navbar */
 }
 
-/* Button container styling */
+
 #button-container {
     margin-bottom: 20px;
 }
@@ -82,7 +81,6 @@ button:hover {
     width: 100%;
 }
 
-/* USER INFORMATION Styling */
 #info {
     margin-top: 20px;
     padding: 20px;
